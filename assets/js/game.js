@@ -6,7 +6,7 @@ var playerMoney = 10;
 // You can also log multiple values at once like this
 console.log(playerName, playerAttack, playerHealth, playerMoney);
 
-var enemyName = "Roberto";
+var enemyName = "Roborto";
 var enemyHealth = 50;
 var enemyAttack = 12;
 // create function
@@ -54,10 +54,12 @@ if (promptFight === "fight" || promptFight === "FIGHT") {
   // if no (false), ask question again by running fight() again
   else {
     fight();
-  }
+  } 
+// if player did not chose 1 or 2 in prompt
+} else {
+  window.alert("You need to pick a valid option. Try again!");
 }
-  
-}
+};
   
 //execute function
 fight();
